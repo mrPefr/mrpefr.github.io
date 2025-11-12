@@ -5,5 +5,10 @@
 nav{
     border:1px solid grey;
     padding:7%;
+    
+}
 
+nav a{
+    color:#404040;
+    font-size:1.5rem;
 }
