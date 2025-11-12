@@ -11,4 +11,5 @@ nav{
 nav a{
     color:#404040;
     font-size:1.5rem;
+    text-decoration: none;
 }
