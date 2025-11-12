@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+nav{
+    border:1px solid grey;
+    padding:7%;
+
+}
