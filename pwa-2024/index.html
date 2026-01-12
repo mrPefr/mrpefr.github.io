@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA - 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+    <script src="main.js" defer></script>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header hx-get = "header.html" hx-trigger="load">
+
+    </header>
+    <main>
+        <button onclick="getChannels()">Get Channels</button>
+        <div class="box">
+            <img src="assets/bild1.jpg" alt="">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
