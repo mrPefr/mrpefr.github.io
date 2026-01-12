@@ -5,8 +5,8 @@
   "background_color": "#001F3F",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "http://127.0.0.1:5500",
-  "start_url": "http://127.0.0.1:5500/index.html",
+  "scope": "https://mrpefr.github.io/pwa-2024/",
+  "start_url": "https://mrpefr.github.io/pwa-2024/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
