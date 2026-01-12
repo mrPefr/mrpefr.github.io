@@ -34,3 +34,42 @@ async function getChannels(){
 
 }
 
+
+
+//// Instalation
+
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent the default mini-infobar
+  event.preventDefault();
+
+  // Save the event so it can be triggered later
+  deferredPrompt = event;
+
+  // Show your custom install popup/button
+ showInstallPopup();
+
+});
+
+
+function showInstallPopup() {
+  document.getElementById('install-popup').style.display = 'block';
+}
+
+function hideInstallPopup() {
+  document.getElementById('install-popup').style.display = 'none';
+}
+
+
+document.getElementById('install-btn').addEventListener('click', async () => {
+  if (!deferredPrompt) return;
+
+  deferredPrompt.prompt();
+
+  const { outcome } = await deferredPrompt.userChoice;
+  console.log('User choice:', outcome);
+
+  deferredPrompt = null;
+  hideInstallPopup();
+});
